@@ -1,0 +1,17 @@
+<!-- 模板结构 -->
+<template name="homeTmp">
+    <view class="tmpContainer">
+        <text class="name">{{name}}</text>
+        <image class="contentImg" src="{{img}}"></image>
+        <text class="content">{{content}}</text>
+        <view class="avatar_author_date">
+            <image src="{{avatar}}"></image>
+            <text>{{author}}</text>
+            <text>{{date}}</text>
+        </view>
+        <view class="evaluation">
+            <image src="{{star}}" mode="widthFix"></image>
+            <text>{{score}}</text>
+        </view>
+    </view>
+</template>
