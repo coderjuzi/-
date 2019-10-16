@@ -1,0 +1,236 @@
+/* home页样式 */
+.detailContainer {
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+}
+
+.share_button[plain] {
+  border:0;
+  right: 0rpx;
+  margin: 20rpx 0;
+  position: absolute;
+}
+
+.share_button image{
+  width:48rpx;
+  height: 48rpx;
+  border: none;
+}
+
+.scriptInfo {
+  display: flex;
+}
+
+.image {
+  width: 30%;
+  margin: 30rpx;
+}
+
+.basicInfo {
+  font-size: 28rpx;
+  margin: 30rpx 0;
+  width: 60%;
+}
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  filter: blur(10rpx);/*图片虚化*/
+}
+
+.name {
+  font-size: 50rpx;
+}
+
+.author {
+  font-size: 36rpx;
+  margin-top: 20rpx;
+  border-bottom: 2rpx solid #B1B1B1;
+  display: inline-block; /*下划线和文字长度保持一致*/
+}
+
+.series {
+  font-size: 36rpx;
+  margin: 20rpx 0;
+  border-bottom: 2rpx solid #B1B1B1;
+}
+
+.scriptLabel text{
+  font-size: 24rpx;
+  margin: 1%;
+  background-color: #2B2B2B;
+  padding: 4rpx 16rpx;
+  border-radius: 28rpx;
+  opacity: 0.6;
+}
+
+.discount {
+  background-color: deeppink!important;
+  opacity: 1!important;
+}
+
+.rank {
+  font-size: 32rpx;
+  background-color: #25212D;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.author_avatar {
+  margin: 0 30rpx;
+  width: 68rpx;
+  height: 68rpx;
+}
+
+.rank_text {
+  opacity: 1;
+}
+
+.rank_number {
+  margin: 0 30rpx;
+  color: #F5A431;
+}
+
+.vote_button {
+  width: 26%;
+  height: 60%;
+  border-radius: 32rpx;
+  background-color: #F5A431;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailedInfo {
+  background-color: #2F2B37;
+  padding: 30rpx;
+}
+
+.synopsis {
+  display: flex;
+  flex-direction: column;
+}
+
+.synopsis_title {
+  font-size: 46rpx;/*故事简介*/
+  margin-bottom: 10rpx;
+}
+
+.synopsis_content {
+  font-size: 36rpx;
+  text-indent: 72rpx; /*首行缩进两个字*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden; /*通过以上四行实现收缩功能*/
+}
+
+.bg-white-ellipsis {
+  display: flex;
+  flex-direction: column;
+}
+
+.synopsis_arrow {
+  width: 3%;
+  margin-top: 30rpx;
+  align-self: center;
+}
+
+.ellipsis {
+  -webkit-line-clamp: 3; /*最多显示3行*/
+  opacity: 0.50; /*透明度50%*/
+}
+
+.unellipsis {
+  -webkit-line-clamp: 0; /*全部显示*/
+  opacity: 1; /*不透明*/
+}
+
+.scriptRole {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid #eee; /*分割线*/
+  border-top: 1rpx solid #eee; /*分割线*/
+  margin: 20rpx 0;
+}
+
+.scriptRole_title {
+  font-size: 46rpx;/*角色介绍*/
+  margin: 30rpx 0;
+}
+
+.scroll-view {
+  height: 340rpx;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.role_view {
+  width: 220rpx;
+  height: 100%;
+  display: inline-block;
+}
+
+.role_image {
+  width: 220rpx;
+  height: 263.28rpx;
+  padding-left: 30rpx;
+  display: inline-block;
+  vertical-align:top;
+
+}
+
+.role_text{
+  font-size: 32rpx;
+  width: 260rpx;
+  height: 270rpx;
+  opacity: 0.80; /*透明度50%*/
+  background-color: #393642;
+  border-bottom-right-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  padding: 0 30rpx;
+  display: inline-block;
+  vertical-align: top;
+  white-space:normal;/*解决文字不换行*/
+}
+
+.scriptScore {
+
+}
+
+.score_title {
+  font-size: 46rpx;/*剧本评分*/
+  margin: 40rpx 0;
+}
+
+.score {
+  font-size: 80rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.score_star_count {
+  margin-bottom: 20rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.score_star_count image {
+  width: 120%;
+  margin-bottom: -10rpx;
+}
+
+.score_star_count text {
+  font-size: 32rpx;
+}
+
+.specific_score {
+  font-size: 30rpx;
+  opacity: 0.50; /*透明度50%*/
+}

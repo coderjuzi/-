@@ -1,5 +1,5 @@
 <!--home页结构-->
-<!--引入模板结构-->
+<!--引入home模板结构-->
 <import src="/pages/template/home-template.wxml"/>
 <view>
   <swiper indicator-dots indicator-color="orange" indicator-active-color="yellowgreen" autoplay="changeAutoplay">
@@ -16,7 +16,7 @@
       <image src="/images/carousel/post009.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/carousel/post0010.jpg"></image>
+      <image src="/images/carousel/post010.jpg"></image>
     </swiper-item>
   </swiper>
   <block wx:for="{{homeArr}}" wx:key="{{index}}">

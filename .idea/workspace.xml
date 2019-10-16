@@ -1,6 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18156440-674c-4d20-8848-90d16fd4ed52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/script-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/avatar/coderjuzi-gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/arrow/arrow_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/arrow/arrow_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/navi/back-left-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/navi/back-left-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/navi/share-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/navi/share-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder/placeholder018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/detail/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/detail/detail.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/detail/detail.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/home-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/home.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/template/home-template.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/template/home-template.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/template/home-template.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/template/home-template.wxss" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1S5anKM5peGu2QWLIo2YTDqqczf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="/usr/local/lib/node_modules/less/bin/lessc" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="detail.wxml" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ju-tui-li/pages/detail/detail.wxml" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.detail.wxml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18156440-674c-4d20-8848-90d16fd4ed52" name="Default Changelist" comment="" />
+      <created>1570856076707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570856076707</updated>
+      <workItem from="1570856082477" duration="10039000" />
+      <workItem from="1570943331526" duration="29876000" />
+      <workItem from="1571110466101" duration="32667000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 // pages/home/home.js
-let data = require('../../data/home-data.js');
+let data = require('../../data/script-data.js');
 
 Page({
 
@@ -25,7 +25,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      homeArr: data.home_data
+      homeArr: data.script_data
     })
   },
 

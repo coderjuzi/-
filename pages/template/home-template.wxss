@@ -1,32 +1,32 @@
 /* 模板样式 */
 .tmpContainer {
     display: flex;
-    flex-direction: column;/*纵向弹性布局*/
-    border-bottom: 1rpx solid #eee;/*分割线*/
-    border-top: 1rpx solid #eee;/*分割线*/
-    margin: 5rpx 0;
+    flex-direction: column; /*纵向弹性布局*/
+    border-bottom: 1 rpx solid #eee; /*分割线*/
+    border-top: 1 rpx solid #eee; /*分割线*/
+    margin: 5 rpx 0;
 }
 
 .avatar_author_date {
-    margin-left: 240rpx;
+    margin-left: 240 rpx;
 }
 
 .avatar_author_date image {
-    width: 40rpx;
-    height: 40rpx;
-    vertical-align: middle;/*垂直居中对齐*/
-    margin: 10rpx 0;
+    width: 40 rpx;
+    height: 40 rpx;
+    vertical-align: middle; /*垂直居中对齐*/
+    margin: 10 rpx 0;
 }
 
 .avatar_author_date text {
-    font-size: 34rpx;
-    margin: 10rpx;
+    font-size: 34 rpx;
+    margin: 10 rpx;
 }
 
 .name {
-    margin: 10rpx;
-    font-size: 38prx;
-    font-weight: bold;/*加粗*/
+    margin: 10 rpx;
+    font-size: 38 prx;
+    font-weight: bold; /*加粗*/
 }
 
 .contentImg {
@@ -34,22 +34,22 @@
 }
 
 .content {
-    font-size: 34rpx;
-    text-indent: 68rpx;/*首行缩进两个字*/
-    margin: 10rpx;
+    font-size: 34 rpx;
+    text-indent: 68 rpx; /*首行缩进两个字*/
+    margin: 10 rpx;
 }
 
 .evaluation image {
     width: 30%;
-    margin-left: 350rpx;
-    margin-right: 50rpx;
+    margin-left: 350 rpx;
+    margin-right: 50 rpx;
     vertical-align: middle;
 }
 
 .evaluation text {
-    font-size: 50rpx;
+    font-size: 50 rpx;
     color: #F5A431;
-    margin-right: 10rpx;
+    margin-right: 10 rpx;
     vertical-align: middle;
 
 }
