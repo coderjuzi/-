@@ -1,27 +1,52 @@
-<!--home页结构-->
-<!--引入home模板结构-->
+<!-- home页结构 -->
+<!-- 引入home模板结构 -->
 <import src="/pages/template/home-template.wxml"/>
-<view>
-  <swiper indicator-dots indicator-color="orange" indicator-active-color="yellowgreen" autoplay="changeAutoplay">
-    <swiper-item>
-      <image src="/images/carousel/post006.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="/images/carousel/post007.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="/images/carousel/post008.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="/images/carousel/post009.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="/images/carousel/post010.jpg"></image>
-    </swiper-item>
+<import src="/pages/template/detail-template.wxml"/>
+
+<view class="home">
+  <swiper catchtap="carouselToDetail"
+          indicator-dots
+          indicator-color="#F5A431"
+          indicator-active-color="#9ACD32"
+          autoplay="changeAutoplay"
+          circular="changeCircular">
+    <view class="swiper-item">
+      <swiper-item>
+        <image data-index="0" src="/images/carousel/post001.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image data-index="1" src="/images/carousel/post002.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image data-index="2" src="/images/carousel/post003.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image data-index="3" src="/images/carousel/post004.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image data-index="4" src="/images/carousel/post005.jpg"></image>
+      </swiper-item>
+    </view>
   </swiper>
+  <view class="controlBar">
+    <button class="scriptSearch" plain="true">
+      <image src="/images/icon/navi/scriptSearch.png"></image>
+    </button>
+    <button class="ScriptRank" plain="true">
+      <image src="/images/icon/navi/ScriptRank.png"></image>
+    </button>
+    <button class="scriptDiscount" plain="true">
+      <image src="/images/icon/navi/scriptDiscount.png"></image>
+    </button>
+    <button class="ScriptList" plain="true">
+      <image src="/images/icon/navi/ScriptList.png"></image>
+    </button>
+  </view>
   <block wx:for="{{homeArr}}" wx:key="{{index}}">
-      <view>
-          <template is="homeTmp" data="{{...item}}"/>
-      </view>
+    <view catchtap="toDetail" data-index="{{index}}">
+      <template is="scriptTmp" data="{{item}}"/>
+      <!--<template is="homeTmp" data="{{...item}}"/>-->
+    </view>
   </block>
+  <template is="comment"/>
 </view>

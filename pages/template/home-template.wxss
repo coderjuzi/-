@@ -1,55 +1,66 @@
-/* 模板样式 */
-.tmpContainer {
+/* home页模板样式 */
+/* script模板样式 */
+.scriptContainer {
+    color: #FFF;
+    margin: 40rpx;
     display: flex;
-    flex-direction: column; /*纵向弹性布局*/
-    border-bottom: 1 rpx solid #eee; /*分割线*/
-    border-top: 1 rpx solid #eee; /*分割线*/
-    margin: 5 rpx 0;
+    flex-direction: row;
 }
 
-.avatar_author_date {
-    margin-left: 240 rpx;
+.scriptContainer image {
+    width: 26%;
 }
 
-.avatar_author_date image {
-    width: 40 rpx;
-    height: 40 rpx;
-    vertical-align: middle; /*垂直居中对齐*/
-    margin: 10 rpx 0;
+.scriptRight {
+    margin-left: 30rpx;
 }
 
-.avatar_author_date text {
-    font-size: 34 rpx;
-    margin: 10 rpx;
+.scoreViewTmp {
+  font-size: 28rpx;
 }
 
-.name {
-    margin: 10 rpx;
-    font-size: 38 prx;
-    font-weight: bold; /*加粗*/
+.scoreViewTmp {
+
 }
 
-.contentImg {
-    width: 100%;
+/* scoreView模板样式 */
+.score {
+  font-size: 74rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.content {
-    font-size: 34 rpx;
-    text-indent: 68 rpx; /*首行缩进两个字*/
-    margin: 10 rpx;
+.score_star_count {
+  margin-bottom: 10rpx;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.evaluation image {
-    width: 30%;
-    margin-left: 350 rpx;
-    margin-right: 50 rpx;
-    vertical-align: middle;
+.score_star_count image {
+  width: 120rpx;/*星级*/
+  margin-bottom: -10rpx;
 }
 
-.evaluation text {
-    font-size: 50 rpx;
-    color: #F5A431;
-    margin-right: 10 rpx;
-    vertical-align: middle;
+.score_count {
+  margin-top: 10rpx;
+}
 
+/* scriptLabel模板样式 */
+.scriptLabelContainer {
+  bottom: 0;
+  margin-top: 20rpx;
+}
+
+.scriptLabelContainer text {
+  font-size: 24rpx;
+  margin-right: 8rpx;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4rpx 16rpx;
+  border-radius: 24rpx;
+}
+
+.discount {
+  background-color: #9ACD32 !important;
+  opacity: 1 !important;
 }

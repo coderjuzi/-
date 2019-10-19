@@ -1,91 +1,90 @@
 <!--detail页结构-->
+<import src="/pages/template/home-template.wxml"/>
 <view class="detailContainer">
-    <view>
-        <button class="share_button" open-type='share' plain="true"><image src="/images/icon/navi/share-white.png"></image></button>
-    </view>
-    <block class="detailArr" wx:for="{{detailArr}}" wx:key="{{index}}">
-        <view class="script">
-            <view class="scriptInfo">
-                <image class="bg-image" src="/images/carousel/post001.jpg" mode="widthFix"></image>
-                <image class="image" src="{{item.image}}" mode="widthFix"></image>
-                <view class="basicInfo">
-                    <view class="name">
-                        <text>{{item.name}}</text>
-                    </view>
-                    <view class="time_words">
-                        <text>{{item.time}}</text>
-                        <text>小时 | </text>
-                        <text>{{item.words}}</text>
-                        <text>字</text>
-                    </view>
-                    <view class="author">
-                        <text>作者：</text>
-                        <text>{{item.author}}</text>
-                    </view>
-                    <view class="series">
-                        <text>系列：</text>
-                        <text>{{item.series}}</text>
-                    </view>
-                    <view class="scriptLabel">
-                        <text class="number">{{item.number}}</text>
-                        <text class="type">{{item.type}}</text>
-                        <text class="age">{{item.age}}</text>
-                        <text class="level">{{item.level}}</text>
-                        <text class="discount">{{item.discount}}</text>
-                    </view>
-                </view>
-            </view>
-            <view class="rank">
-                <image class="author_avatar" src="{{item.avatar}}"></image>
-                <view class="rank_text">
-                    <text class="rank_title">剧本排行榜</text>
-                    <text class="rank_number">No.{{item.rank}}</text>
-                </view>
-                <button class="vote_button" style="vertical-align:middle"><span>投票 </span></button>
-            </view>
-            <view class="detailedInfo">
-                <view class="synopsis">
-                    <text class="synopsis_title">故事简介</text>
-                    <text class="synopsis_content {{ellipsis?'ellipsis':'unellipsis'}}">{{item.synopsis}}</text>
-                    <view class="bg-white-ellipsis" bindtap="ellipsis">
-                        <image class="synopsis_arrow"
-                               src="{{ellipsis?'/images/icon/arrow/arrow_down.png':'/images/icon/arrow/arrow_up.png'}}"
-                               mode="widthFix"></image>
-                    </view>
-                </view>
-                <view class="scriptRole">
-                    <text class="scriptRole_title">角色介绍</text>
-                    <scroll-view class="scroll-view" scroll-x="true" scroll-x>
-                        <view>
-                            <block class="role_view" wx:for="{{item.roleList}}" wx:key="{{role_index}}"
-                                   wx:for-item="roleList">
-                                <image class="role_image" src="{{roleList.role_img}}" mode="widthFix"/>
-                                <text class="role_text">{{roleList.role_name}}
-                                    {{roleList.role_gender}}，{{roleList.role_age}}岁
-                                    {{roleList.role_intro}}
-                                </text>
-                            </block>
-                        </view>
-                    </scroll-view>
-                </view>
-                <view class="scriptScore">
-                    <text class="score_title">剧本评分</text>
-                    <view class="score_view">
-                        <text class="score">{{item.score}}</text>
-                        <view class="score_star_count">
-                            <image src="{{item.star}}" mode="widthFix"/>
-                            <text>{{item.score_count}}人评分
-                            </text>
-                        </view>
-                    </view>
-                    <view class="specific_score">
-                        <text>推理性：{{item.score_inference}}</text>
-                        <text>故事性：{{item.score_story}}</text>
-                        <text>娱乐性：{{item.score_entertainment}}</text>
-                        <text>难度：{{item.score_difficulty}}</text>
-                    </view>
-                </view>
-            </view>
+  <view class="bg-image">
+    <image src="{{detailArr.image}}" mode="widthFix"></image>
+  </view>
+  <view class="share_button">
+    <button open-type='share' plain="true">
+      <image src="/images/icon/navi/share-white.png" mode="widthFix"></image>
+    </button>
+  </view>
+  <view class="collect_button">
+    <image catchtap="handleCollection" wx:if="{{!isCollected}}" src="/images/icon/collect/uncollected.png" mode="widthFix"></image>
+    <image catchtap="handleCollection" wx:if="{{isCollected}}" src="/images/icon/collect/collected.png" mode="widthFix"></image>
+  </view>
+  <view class="script">
+    <view class="scriptInfo">
+      <image class="image" src="{{detailArr.image}}" mode="widthFix"></image>
+      <view class="basicInfo">
+        <view class="detail_name">
+          <text>{{detailArr.name}}</text>
         </view>
-    </block>
+        <view class="time_words">
+          <text>{{detailArr.time}}小时 | {{detailArr.words}}字</text>
+        </view>
+        <view class="author">
+          <text>作者：</text>
+          <text>{{detailArr.author}}</text>
+        </view>
+        <view class="series">
+          <text>系列：</text>
+          <text>{{detailArr.series}}</text>
+        </view>
+        <template is="scriptLabelTmp" data="{{...detailArr}}"/>
+      </view>
+    </view>
+    <view class="rank">
+      <image class="author_avatar" src="{{detailArr.avatar}}"></image>
+      <view class="rank_text">
+        <text class="rank_title">剧本排行榜</text>
+        <text class="rank_number">No.{{detailArr.rank}}</text>
+      </view>
+      <button class="vote_button" style="vertical-align:middle">投票</button>
+    </view>
+    <view class="detailedInfo">
+      <view class="synopsis">
+        <text class="synopsis_title">故事简介</text>
+        <text class="synopsis_content {{ellipsis?'ellipsis':'unellipsis'}}">{{detailArr.synopsis}}</text>
+        <view class="bg-white-ellipsis" bindtap="ellipsis">
+          <image class="synopsis_arrow"
+                 src="{{ellipsis?'/images/icon/arrow/arrow_down.png':'/images/icon/arrow/arrow_up.png'}}"
+                 mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="scriptRole">
+        <text class="scriptRole_title">角色介绍</text>
+        <scroll-view class="scroll-view" scroll-x="true" scroll-x>
+          <block wx:for="{{detailArr.roleList}}" wx:key="{{role_index}}" wx:for-item="roleList">
+            <image class="role_image" src="{{roleList.role_img}}" mode="widthFix"/>
+            <view class="role_text">
+              <view class="role_name">
+                <text>{{roleList.role_name}}</text>
+              </view>
+              <view class="role_info">
+                <text>{{roleList.role_gender}}，{{roleList.role_age}}岁</text>
+                <text>{{roleList.role_intro}}</text>
+              </view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+      <view class="scriptScore">
+        <text class="score_title">剧本评分</text>
+        <template is="scoreViewTmp" data="{{...detailArr}}"/>
+        <view class="specific_score">
+          <text>推理性：{{detailArr.score_inference}}</text>
+          <text>故事性：{{detailArr.score_story}}</text>
+          <text>娱乐性：{{detailArr.score_entertainment}}</text>
+          <text>难度：{{detailArr.score_difficulty}}</text>
+        </view>
+      </view>
+      <view class="scriptComment">
+        <view class="comment_title">
+          <text>玩家评价</text>
+        </view>
+        <button class="showComment">已隐藏剧透评价，点击显示</button>
+      </view>
+    </view>
+  </view>
 </view>

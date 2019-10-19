@@ -1,6 +1,6 @@
-<!-- home模板结构 -->
+<!-- home页模板结构 -->
 <template name="homeTmp">
-    <view class="tmpContainer">
+    <view class="homeContainer">
         <text class="name">{{name}}</text>
         <image class="contentImg" src="{{img}}"></image>
         <view class="avatar_author_date">
@@ -12,5 +12,56 @@
             <image src="{{star}}" mode="widthFix"></image>
             <text>{{score}}</text>
         </view>
+    </view>
+</template>
+
+<!-- home剧本简介模板结构 -->
+<template name="scriptTmp">
+    <view class="scriptContainer">
+        <image src="{{item.image}}" mode="widthFix"></image>
+        <view class="scriptRight">
+            <text class="name_level">{{item.name_level}}</text>
+            <view class="scriptLabelTmp">
+                <template is="scriptLabelTmp" data='{{...item}}'/>
+            </view>
+            <view class="scoreViewTmp">
+                <template is="scoreViewTmp" data='{{...item}}'/>
+            </view>
+        </view>
+    </view>
+</template>
+
+<!-- detail页模板结构 -->
+<!-- scoreView模板结构 -->
+<template name="scoreViewTmp">
+    <view class="scoreViewContainer">
+        <text class="score">{{score}}</text>
+        <view class="score_star_count">
+            <image src="{{star}}" mode="widthFix"></image>
+            <view class="score_count">
+                <text>{{score_count}}人评分</text>
+            </view>
+        </view>
+    </view>
+</template>
+
+<!-- scriptLabel模板结构 -->
+<template name="scriptLabelTmp">
+    <view class="scriptLabelContainer">
+        <text class="number">{{number}}</text>
+        <text class="type">{{type}}</text>
+        <text class="age">{{age}}</text>
+        <text class="level">{{level}}</text>
+        <text class="discount">{{discount}}</text>
+    </view>
+</template>
+
+<!-- 底部导航栏模板结构 -->
+<template name="navBarTmp">
+    <view class="navBarContainer">
+        <button class="scriptSearch"></button>
+        <button class="ScriptRank"></button>
+        <button class="scriptDiscount"></button>
+        <button class="ScriptList"></button>
     </view>
 </template>

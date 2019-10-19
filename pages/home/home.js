@@ -7,16 +7,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-    homeArr: [],
-    autoplay: false// 默认不滚动
+    homeArr: {},
+    autoplay: false,// 默认不自动切换
+    circular: false// 默认不衔接滑动
   },
 
   /**
-   * 设置轮播图自动滚动
+   * 设置轮播图自动切换
    */
   changeAutoplay() {
     this.setData({
       autoplay: !this.data.autoplay
+    })
+  },
+
+  /**
+   * 设置轮播图衔接滑动
+   */
+  changeAutoplay() {
+    this.setData({
+      circular: !this.data.circular
     })
   },
 
@@ -26,6 +36,29 @@ Page({
   onLoad: function (options) {
     this.setData({
       homeArr: data.script_data
+    })
+  },
+
+  /**
+   * 点击跳转到detail详情页
+   * wx.navigateTo 页面隐藏（可回退）
+   * wx.redirectTo 页面卸载（不可回退）
+   */
+  toDetail(event) {
+    // 获取点击跳转的下标的
+    let index = event.currentTarget.dataset.index;
+    wx.navigateTo({
+      url: '/pages/detail/detail?index=' + index
+    })
+  },
+
+  /**
+   * 点击轮播图跳转到detail详情页
+   */
+  carouselToDetail(event) {
+    let index = event.target.dataset.index;
+    wx.navigateTo({
+      url: '/pages/detail/detail?index=' + index
     })
   },
 
