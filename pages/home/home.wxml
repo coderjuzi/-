@@ -48,5 +48,4 @@
       <!--<template is="homeTmp" data="{{...item}}"/>-->
     </view>
   </block>
-  <template is="comment"/>
 </view>
